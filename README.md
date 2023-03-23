@@ -10,6 +10,6 @@ Ký tự đầu tiên viết hoa
   - Spread/Rest props
   - Children prop
   - "<" YourComponent>String literals <YourComponent"/>"
-  - "<" YourComponent>{expression} <YourComponent "/>"
+  - "<" YourComponent>{expression} <YourComponent "/>" https://codesandbox.io/s/children-render-props-02-5yl398
   - render props
 
