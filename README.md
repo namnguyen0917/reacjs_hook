@@ -2,7 +2,6 @@
 
 # Component
 Ký tự đầu tiên viết hoa
-Phần II
 -Props trong JSX
   - YourComponent
       propName1="String literals"
@@ -10,7 +9,7 @@ Phần II
   - Props default is "True"
   - Spread/Rest props
   - Children prop
-      -YourComponent><YourComponent
-      -YourComponent><YourComponent
-  -render props
+  - YourComponent><YourComponent
+  - YourComponent><YourComponent
+  - render props
 
