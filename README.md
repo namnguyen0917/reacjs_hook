@@ -12,5 +12,5 @@ Ký tự đầu tiên viết hoa
   - Children prop
   - "<" YourComponent>String literals <YourComponent"/>"
   - "<" YourComponent>{expression} <YourComponent "/>" https://codesandbox.io/s/children-render-props-02-5yl398
-  - render props
+  - render props https://codesandbox.io/s/children-render-props-01-jznrtz
 
