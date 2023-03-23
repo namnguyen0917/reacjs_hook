@@ -1,9 +1,10 @@
 # reacjs_hook
 
 # Component
-Ký tự đầu tiên viết hoa : function Text(){}
+Ký tự đầu tiên viết hoa : function Text(){} , bất cứ func nào cũng làm func component được , cho dù nó là method của 1 obj
 
 - Syntax - khai báo https://codesandbox.io/s/syntax-props-51gbtk
+- Ex create component đa năng  https://codesandbox.io/s/trusting-lena-w0yxlq
 - Props trong JSX
   - "<" YourComponent
       propName1="String literals"
