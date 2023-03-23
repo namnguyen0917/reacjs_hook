@@ -2,7 +2,8 @@
 
 # Component
 Ký tự đầu tiên viết hoa
--Props trong JSX
+
+- Props trong JSX
   - "<" YourComponent
       propName1="String literals"
       propName2={expression} />
