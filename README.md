@@ -1,8 +1,9 @@
 # reacjs_hook
 
 # Component
-Ký tự đầu tiên viết hoa
+Ký tự đầu tiên viết hoa : function Text(){}
 
+- Syntax - khai báo https://codesandbox.io/s/syntax-props-51gbtk
 - Props trong JSX
   - "<" YourComponent
       propName1="String literals"
