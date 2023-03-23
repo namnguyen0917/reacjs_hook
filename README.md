@@ -3,13 +3,13 @@
 # Component
 Ký tự đầu tiên viết hoa
 -Props trong JSX
-  - YourComponent
+  - "<" YourComponent
       propName1="String literals"
-      propName2={expression}
+      propName2={expression} />
   - Props default is "True"
   - Spread/Rest props
   - Children prop
-  - YourComponent><YourComponent
-  - YourComponent><YourComponent
+  - "<" YourComponent>String literals <YourComponent"/>"
+  - "<" YourComponent>{expression} <YourComponent "/>"
   - render props
 
