@@ -1,9 +1,13 @@
 # reacjs_hook
-
+# CSS in reactjs 
+  - Syntax , Module.css , sass , clsx
+  - CSS folder structure / directory structure , create css global.
+  - https://codesandbox.io/s/css-1-yb6dvl
 # Component
 Ký tự đầu tiên viết hoa : function Text(){} , bất cứ func nào cũng làm func component được , cho dù nó là method của 1 obj
 
-- Syntax - khai báo https://codesandbox.io/s/syntax-props-51gbtk
+- Syntax
+- khai báo https://codesandbox.io/s/syntax-props-51gbtk
 - Ex create component đa năng  https://codesandbox.io/s/trusting-lena-w0yxlq
 - Props trong JSX
   - "<" YourComponent
