@@ -9,6 +9,7 @@
     - Set State với callbacks
     - Initial State với callbacks
     - Set state thay thế state bằng giá trị mới
+  https://codesandbox.io/s/nervous-leaf-sge400?file=/src/App.js
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
