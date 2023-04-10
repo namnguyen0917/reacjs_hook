@@ -1,6 +1,14 @@
 # reacjs_hook
 # useState
-  Khi nào dùng ? khi dữ liệu thay đổi thì giao diện tự động thay đổi ( render lại dữ liệu) .Giá trị khởi tạo trong useState chỉ 1 lần có thể(1 chuổi hay 1 mảng or object , 1 số)
+  - Khi trạng thái của dữ liệu thay đổi thì giao diện tự động thay đổi (render lại dữ liệu). https://react.dev/reference/react/useState
+  - Khai báo :
+    - const [state, setState] = useState(InitialState);
+  - Chú ý : 
+    - InitialState chỉ khơi tạo một lần duy nhất có thể là useState (string, array, object, func, characters, true/false);
+    - Component dc re-render sau khi 'setState'
+    - Set State với callbacks
+    - Initial State với callbacks
+    - Set state thay thế state bằng giá trị mới
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
