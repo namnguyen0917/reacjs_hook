@@ -1,7 +1,7 @@
 # Hook
 # useState
   - Khi trạng thái của dữ liệu thay đổi thì giao diện tự động thay đổi (render lại dữ liệu). https://react.dev/reference/react/useState
-  - Khai báo :
+  - Syntax :
     - const [state, setState] = useState(InitialState);
   - Chú ý : 
     - InitialState chỉ khơi tạo một lần duy nhất có thể là useState (string, array, object, func, characters, true/false);
@@ -14,6 +14,19 @@
     - Radio and checkbox https://codesandbox.io/s/radio-and-check-box-39s976
     - https://codesandbox.io/s/awesome-heyrovsky-vzi23m
 # useEffect
+  - Cho phép thực hiện side effect bên trong các function component. Side-effects có thể là những thứ sau trong ứng dụng:
+    - Hiển thi dữ liệu ra màn hình.
+    - Viết hoặc tạo một file.
+    - Lấy dữ liệu – fetching data.
+    - Gọi một function có side effects.
+    - Thay đổi DOM.
+    - Gọi hàm Math.random().
+  - Syntax :
+    - aaaaaa
+  - Chú ý : 
+    - cccc
+  - Ex:
+    - ccc 
 # useRef
 # useCallback
 # useLayoutEffect
@@ -21,7 +34,7 @@
 # useReducer
 # useEx
   - Text
-  - Khai báo :
+  - Syntax :
     - aaaaaa
   - Chú ý : 
     - cccc
