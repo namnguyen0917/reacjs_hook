@@ -21,10 +21,19 @@
     - Gọi một function có side effects.
     - Thay đổi DOM.
     - Gọi hàm Math.random().
+    - ....v.v.
+  - Có 2 loại side effect chính là:
+    - Effects không cần Cleanup.
+    - Effects cần phải Cleanup.
   - Syntax :
-    - aaaaaa
+    - useEffect(effectFunction, arrayDependencies):
+      - useEffect(Callback): Gọi callback mỗi khi component re-render , Gọi callback mỗi khi component add elenment vào DOM.
+      - useEffect(Callback,[]): Chỉ gọi 1 lần sau khi component mounted.
+      - useEffect(Callback,[dependencies]): Callback sẻ được gọi lại mỗi khi dependencies thay đôi.
   - Chú ý : 
-    - cccc
+    - Callback luôn dc gọi sau khi component mounted.
+    - Clearup function luôn được gọi trướt khi component unmounted.
+    - Clearup function luôn được gọi trướt khi callback được gọi ( trừ unmounted).
   - Ex:
     - ccc 
 # useRef
