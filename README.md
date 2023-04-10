@@ -11,6 +11,7 @@
     - Set state thay thế state bằng giá trị mới
   - Ex:
     - https://codesandbox.io/s/nervous-leaf-sge400?file=/src/App.js
+    - Radio and checkbox https://codesandbox.io/s/radio-and-check-box-39s976
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
