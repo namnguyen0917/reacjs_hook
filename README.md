@@ -19,6 +19,14 @@
 # useLayoutEffect
 # useMemo
 # useReducer
+# useEx
+  - Text
+  - Khai báo :
+    - aaaaaa
+  - Chú ý : 
+    - cccc
+  - Ex:
+    - ccc
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
