@@ -1,5 +1,6 @@
 # reacjs_hook
 # useState
+  Khi nào dùng ? khi dữ liệu thay đổi thì giao diện tự động thay đổi ( render lại dữ liệu) .Giá trị khởi tạo trong useState chỉ 1 lần có thể(1 chuổi hay 1 mảng or object , 1 số)
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
