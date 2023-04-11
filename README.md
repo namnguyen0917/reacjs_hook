@@ -5,10 +5,11 @@
     - const [state, setState] = useState(InitialState);
   - Chú ý : 
     - InitialState chỉ khơi tạo một lần duy nhất có thể là useState (string, array, object, func, characters, true/false);
-    - Component dc re-render sau khi 'setState'
-    - Set State với callbacks
-    - Initial State với callbacks
-    - Set state thay thế state bằng giá trị mới
+    - Component dc re-render sau khi 'setState'.
+    - Set State với callbacks.
+    - Initial State với callbacks.
+    - Set state thay thế state bằng giá trị mới.
+    - Khi set state 1 giá trị mới giống với giá trị cũ thì component KHÔNG re-render lại.
   - Ex:
     - https://codesandbox.io/s/nervous-leaf-sge400?file=/src/App.js
     - Radio and checkbox https://codesandbox.io/s/radio-and-check-box-39s976
@@ -16,7 +17,7 @@
 # useEffect
   - Cho phép thực hiện side effect bên trong các function component. Side-effects có thể là những thứ sau trong ứng dụng:
     - Hiển thi dữ liệu ra màn hình.
-    - Viết hoặc tạo một file.
+    - EventListener.
     - Lấy dữ liệu – fetching data.
     - Gọi một function có side effects.
     - Thay đổi DOM.
@@ -24,21 +25,32 @@
     - ....v.v.
   - Có 2 loại side effect chính là:
     - Effects không cần Cleanup.
-    - Effects cần phải Cleanup.
+    - Effects cần phải Cleanup(tránh tình trạng rò rỉ bộ nhớ).
   - Syntax :
     - useEffect(effectFunction, arrayDependencies):
-      - useEffect(Callback): Gọi callback mỗi khi component re-render , Gọi callback mỗi khi component add elenment vào DOM.
-      - useEffect(Callback,[]): Chỉ gọi 1 lần sau khi component mounted.
-      - useEffect(Callback,[dependencies]): Callback sẻ được gọi lại mỗi khi dependencies thay đôi.
+      - (1) useEffect(Callback): Mỗi khi component re-render là nó gọi lại , Gọi callback sau ỗi khi component add elenment vào DOM.
+      - (2) useEffect(Callback,[]): Chỉ gọi 1 lần sau khi component mounted.
+      - (3) useEffect(Callback,[dependencies]): Callback sẻ được gọi lại mỗi khi dependencies thay đôi.
   - Chú ý : 
     - Callback luôn dc gọi sau khi component mounted.
-    - Clearup function luôn được gọi trướt khi component unmounted.
-    - Clearup function luôn được gọi trướt khi callback được gọi ( trừ unmounted).
+    - (A) Clearup function luôn được gọi trướt khi component unmounted.
+    - (B) Clearup function luôn được gọi trướt khi callback được gọi ( trừ unmounted).
+  - Ex :
+    - (1).https://codesandbox.io/s/useeffect-callback-155cgm 
+    - (2).https://codesandbox.io/s/seeffect-callback-u0smnc
+    - (3).https://codesandbox.io/s/useeffect-callback-dep-bbqldz
+    - (2)(A).https://codesandbox.io/s/practical-mestorf-wukljz 
+    - (3)(B).https://codesandbox.io/s/black-voice-pv3vyd
+# useLayoutEffect
+  -  Là một hook hoạt động tương tự như useEffect hook. Điểm khác nhau giữa 2 hooks này là thứ tự thực hiện các công việc mình đã liệt kê dưới đây:
+  - Syntax :
+    - aaaaaa
+  - Chú ý : 
+    - cccc
   - Ex:
-    - ccc 
+    - ccc
 # useRef
 # useCallback
-# useLayoutEffect
 # useMemo
 # useReducer
 # useEx
