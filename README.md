@@ -28,9 +28,9 @@
     - Effects cần phải Cleanup(tránh tình trạng rò rỉ bộ nhớ).
   - Syntax :
     - useEffect(effectFunction, arrayDependencies):
-      - (1) useEffect(Callback): Mỗi khi component re-render là nó gọi lại , Gọi callback sau ỗi khi component add elenment vào DOM.
-      - (2) useEffect(Callback,[]): Chỉ gọi 1 lần sau khi component mounted.
-      - (3) useEffect(Callback,[dependencies]): Callback sẻ được gọi lại mỗi khi dependencies thay đôi.
+      - (1) useEffect(func): Mỗi khi component re-render là nó gọi lại , Gọi callback sau ỗi khi component add elenment vào DOM.
+      - (2) useEffect(func,[]): Chỉ gọi 1 lần sau khi component mounted.
+      - (3) useEffect(func,[dependencies]): func sẻ được gọi lại mỗi khi dependencies thay đôi.
   - Life cycle:
     - Bạn sẽ gây ra 1 event (thay đổi state/props, re-render từ component cha,...)
     - Render component.
@@ -56,7 +56,22 @@
   - Example :
     - https://codesandbox.io/s/zealous-saha-wbsqim
 # useRef
+# memo in react
+  - Bỏ qua việc re-render 1 component nếu nội dung component không thay đổi.
+  - Example :
+    - https://codesandbox.io/s/cranky-oskar-l3lmnl
+
 # useCallback
+  - Là một react hooks giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dependencies thay đổi. Tối ưu quá trình render của React functional components. Nó sẽ rất hữu ích đối với trường hợp một thành phần (component) liên tục được hiển thị lại không cần  thiết trong quá trình xử lý sự kiện người dùng và có hành vi chức năng phức tạp. 
+  - Syntax :
+    - useEffect(func,[]);
+    - useEffect(func,[dependencies]) func sẻ được gọi lại mỗi khi dependencies thay đôi;
+  - Life cycle:
+  - Chú ý : 
+    - Sử dụng React(memo) cho component con thì sử dụng useCallback , còn k sử dụng React(memo) thì không cần sử dụng useCallBack
+    - Quy ước đặt tên: hàm trực tiếp xử lý bắt đầu handler , chờ 1 cái hành động xảy ra đặt là on.
+  - Example:
+    - https://codesandbox.io/s/pedantic-water-8q55cu
 # useMemo
 # useReducer
 # useEx
@@ -65,7 +80,7 @@
     - aaaaaa
   - Chú ý : 
     - cccc
-  - Ex:
+  - Example:
     - ccc
 # Router in react 
   - https://codesandbox.io/s/router-zg5ke4
