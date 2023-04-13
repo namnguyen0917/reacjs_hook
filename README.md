@@ -48,6 +48,11 @@
     - (3)(B).https://codesandbox.io/s/black-voice-pv3vyd
 # useLayoutEffect
   - Là một hook hoạt động tương tự như useEffect hook. Điểm khác nhau giữa 2 hooks này là thứ tự thực hiện các công việc mình đã liệt kê dưới đây:
+    - Syntax :
+    - useEffect(effectFunction, arrayDependencies):
+      - useLayoutEffect(func).
+      - useLayoutEffect(func,[]).
+      - useLayoutEffect(func,[dependencies]).
   - Life cycle:
     - Bạn sẽ gây ra 1 event (thay đổi state/props, re-render từ component cha,...).
     - Render component.
@@ -56,6 +61,23 @@
   - Example :
     - https://codesandbox.io/s/zealous-saha-wbsqim
 # useRef
+  - Text
+  - Syntax :
+    - aaaaaa
+  - Life cycle:
+  - Chú ý : 
+    - cccc
+  - Example :
+    - https://codesandbox.io/s/musing-hypatia-zqhnxn
+
+      là một hook React tích hợp chấp nhận một đối số làm giá trị ban đầu và trả về một tham chiếu (còn gọi là ref ). Một tham chiếu là một đối tượng có thuộc tính đặc biệt current
+      Có 2 quy tắc cần nhớ về tài liệu tham khảo:
+
+      Giá trị của tham chiếu được duy trì (không thay đổi) giữa các lần hiển thị lại thành phần;
+      Cập nhật tham chiếu không kích hoạt kết xuất lại thành phần .
+      https://dmitripavlutin.com/react-useref/
+      https://react.dev/reference/react/useRef
+
 # memo in react
   - Bỏ qua việc re-render 1 component nếu nội dung component không thay đổi.
   - Example :
@@ -73,7 +95,7 @@
   - Example:
     - https://codesandbox.io/s/pedantic-water-8q55cu
 # useMemo
-# useReducer
+# localstorge and sessionstorge
 # useEx
   - Text
   - Syntax :
@@ -83,6 +105,7 @@
   - Example:
     - ccc
 # Router in react 
+  - private route
   - https://codesandbox.io/s/router-zg5ke4
 # CSS in react 
   - Syntax , Module.css , sass , clsx
