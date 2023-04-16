@@ -69,15 +69,17 @@
     - (2) Cập nhật tham chiếu không kích hoạt kết xuất lại thành phần .
     - (3) Giá trị của tham chiếu được duy trì (không thay đổi) giữa các lần hiển thị lại thành phần;
     - (4) Thao tác DOM với một ref.
-    - Theo mặc định, các thành phần của riêng bạn không hiển thị các tham chiếu tới các nút DOM bên trong chúng.forwardRef
+    - Theo mặc định, các thành phần của riêng ,bạn không thể tham chiếu tới các DOM element bên trong chúng , muốn làm dc nhưu vậy phải dùng forwardRef().
   - Example :
     - (4)https://codesandbox.io/s/getallnodelist-3ecuve
     - (4)https://codesandbox.io/s/domwithref-445xvu
     - (4)https://codesandbox.io/s/musing-hypatia-zqhnxn
     - (2)(3)https://codesandbox.io/s/charming-hypatia-xwojf6
 # forwardRef
-- khi ban truyen ref DOM qua 1 component khac thì dung 
-https://react.dev/reference/react/forwardRef
+- khi khi bạn tham chiếu tới 1 DOM element thông qua 1 component thì dùng đén nó .
+- Bạn có thể ứng dụng nó global component.
+- https://legacy.reactjs.org/docs/forwarding-refs.html
+- https://react.dev/reference/react/forwardRef
 # memo in react
   - Bỏ qua việc re-render 1 component nếu nội dung component không thay đổi.
   - Example :
@@ -115,6 +117,7 @@ https://react.dev/reference/react/forwardRef
 # setting bootrap in react
 # how to customer a hook
 # pagi
+# Render Props
 # Component
 Ký tự đầu tiên viết hoa : function Text(){} , bất cứ func nào cũng làm func component được , cho dù nó là method của 1 obj
 
