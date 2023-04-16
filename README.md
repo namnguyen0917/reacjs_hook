@@ -61,27 +61,28 @@
   - Example :
     - https://codesandbox.io/s/zealous-saha-wbsqim
 # useRef
-  - Text
+  - là một React Hook cho phép bạn tham chiếu một giá trị không cần thiết để hiển thị và trả về một tham chiếu (còn gọi là ref ). Một tham chiếu là một đối tượng có thuộc tính đặc biệt current.
   - Syntax :
-    - aaaaaa
-  - Life cycle:
+    - const ref = useRef(initialValue)
   - Chú ý : 
-    - cccc
+    - useReftrả về một đối tượng ref với một current thuộc tính ban đầu được đặt thành giá trị ban đầu mà bạn đã cung cấp.
+    - (2) Cập nhật tham chiếu không kích hoạt kết xuất lại thành phần .
+    - (3) Giá trị của tham chiếu được duy trì (không thay đổi) giữa các lần hiển thị lại thành phần;
+    - (4) Thao tác DOM với một ref.
+    - Theo mặc định, các thành phần của riêng bạn không hiển thị các tham chiếu tới các nút DOM bên trong chúng.forwardRef
   - Example :
-    - https://codesandbox.io/s/musing-hypatia-zqhnxn
-
-      là một hook React tích hợp chấp nhận một đối số làm giá trị ban đầu và trả về một tham chiếu (còn gọi là ref ). Một tham chiếu là một đối tượng có thuộc tính đặc biệt current
-      Có 2 quy tắc cần nhớ về tài liệu tham khảo:
-
-      Giá trị của tham chiếu được duy trì (không thay đổi) giữa các lần hiển thị lại thành phần;
-      Cập nhật tham chiếu không kích hoạt kết xuất lại thành phần .
-      https://dmitripavlutin.com/react-useref/
-      https://react.dev/reference/react/useRef
-
+    - (4)https://codesandbox.io/s/getallnodelist-3ecuve
+    - (4)https://codesandbox.io/s/domwithref-445xvu
+    - (4)https://codesandbox.io/s/musing-hypatia-zqhnxn
+    - (2)(3)https://codesandbox.io/s/charming-hypatia-xwojf6
+# forwardRef
+- khi ban truyen ref DOM qua 1 component khac thì dung 
+https://react.dev/reference/react/forwardRef
 # memo in react
   - Bỏ qua việc re-render 1 component nếu nội dung component không thay đổi.
   - Example :
     - https://codesandbox.io/s/cranky-oskar-l3lmnl
+    - https://codesandbox.io/s/adoring-jerry-nkcjyy
 
 # useCallback
   - Là một react hooks giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dependencies thay đổi. Tối ưu quá trình render của React functional components. Nó sẽ rất hữu ích đối với trường hợp một thành phần (component) liên tục được hiển thị lại không cần  thiết trong quá trình xử lý sự kiện người dùng và có hành vi chức năng phức tạp. 
@@ -111,6 +112,9 @@
   - Syntax , Module.css , sass , clsx
   - CSS folder structure / directory structure , create css global.
   - https://codesandbox.io/s/css-1-yb6dvl
+# setting bootrap in react
+# how to customer a hook
+# pagi
 # Component
 Ký tự đầu tiên viết hoa : function Text(){} , bất cứ func nào cũng làm func component được , cho dù nó là method của 1 obj
 
