@@ -82,12 +82,13 @@
 - https://react.dev/reference/react/forwardRef
 # memo in react
   - Bỏ qua việc re-render 1 component nếu nội dung component không thay đổi.
+  - memo sử dụng toán tử === để so sánh
   - Example :
     - https://codesandbox.io/s/cranky-oskar-l3lmnl
     - https://codesandbox.io/s/adoring-jerry-nkcjyy
 
 # useCallback
-  - Là một react hooks giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dependencies thay đổi. Tối ưu quá trình render của React functional components. Nó sẽ rất hữu ích đối với trường hợp một thành phần (component) liên tục được hiển thị lại không cần  thiết trong quá trình xử lý sự kiện người dùng và có hành vi chức năng phức tạp. 
+  - Lis a React Hook that lets you cache a function definition between re-renders.
   - Syntax :
     - useEffect(func,[]);
     - useEffect(func,[dependencies]) func sẻ được gọi lại mỗi khi dependencies thay đôi;
@@ -98,6 +99,9 @@
   - Example:
     - https://codesandbox.io/s/pedantic-water-8q55cu
 # useMemo
+  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại.
+  - Syntax :
+    - const cachedValue = useMemo(calculateValue, dependencies)
 # localstorge and sessionstorge
 # useEx
   - Text
