@@ -88,20 +88,61 @@
     - https://codesandbox.io/s/adoring-jerry-nkcjyy
 
 # useCallback
-  - Lis a React Hook that lets you cache a function definition between re-renders.
+  -  Là một react hooks giúp mình tạo ra một memoized callback và chỉ tạo ra callback mới khi dependencies thay đổi.
   - Syntax :
-    - useEffect(func,[]);
-    - useEffect(func,[dependencies]) func sẻ được gọi lại mỗi khi dependencies thay đôi;
+    - const cachedValue = useCallback(calculateValue, [dependencies]);
   - Life cycle:
+    - Nhận vào 2 tham số: 1 là function, 2 là dependencies.  
+    - Return memoized callback.
+    - Chỉ tạo ra function mới khi dependencies thay đổi.
+    - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới.
   - Chú ý : 
     - Sử dụng React(memo) cho component con thì sử dụng useCallback , còn k sử dụng React(memo) thì không cần sử dụng useCallBack
     - Quy ước đặt tên: hàm trực tiếp xử lý bắt đầu handler , chờ 1 cái hành động xảy ra đặt là on.
   - Example:
     - https://codesandbox.io/s/pedantic-water-8q55cu
 # useMemo
-  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại.
+  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại /  Là một react hooks giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
+    - useMemo() hạn chế 1 tác vụ re-render không cần thiết -> trả về 1 kq
+    - Tính chất giống như useEffect và useCallBack , chỉ trả về giá trị 1 lần
   - Syntax :
-    - const cachedValue = useMemo(calculateValue, dependencies)
+    - const cachedValue = useMemo(calculateValue, [dependencies]);
+  - Life cycle:
+    - Nhận vào 2 tham số: 1 là function, 2 là dependencies.  
+    - Return memoized callback.
+    - Chỉ tính toán value mới khi dependencies thay đổi.
+    - Nếu dùng empty dependencies thì không bao giờ tạo ra function mới.  
+  - Chú ý :
+    - useMemo sẽ không làm cho kết xuất đầu tiên nhanh hơn. Nó chỉ giúp bạn bỏ qua những công việc không cần thiết trên các bản cập nhật.
+  - Example:
+    - https://codesandbox.io/s/usemome-01-fyc007
+
+# Content
+  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại /  Là một react hooks giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
+    - 
+    - 
+  - Syntax :
+    - 
+  - Life cycle:
+    - 
+    - 
+    - 
+  - Example:
+    - 
+# useContent
+  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại /  Là một react hooks giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
+    - 
+    - 
+  - Syntax :
+    - 
+  - Life cycle:
+    - 
+    - 
+    - 
+  - Example:
+    -
+
+
 # localstorge and sessionstorge
 # useEx
   - Text
