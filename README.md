@@ -116,33 +116,21 @@
     - useMemo sẽ không làm cho kết xuất đầu tiên nhanh hơn. Nó chỉ giúp bạn bỏ qua những công việc không cần thiết trên các bản cập nhật.
   - Example:
     - https://codesandbox.io/s/usemome-01-fyc007
-
-# Content
-  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại /  Là một react hooks giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
-    - 
-    - 
-  - Syntax :
-    - 
-  - Life cycle:
-    - 
-    - 
-    - 
-  - Example:
-    - 
 # useContent
-  - là một React Hook cho phép bạn lưu trữ kết quả tính toán giữa các lần kết xuất lại /  Là một react hooks giúp mình tạo ra một memoized value và chỉ tính toán ra value mới khi dependencies thay đổi.
-    - 
-    - 
-  - Syntax :
-    - 
-  - Life cycle:
-    - 
-    - 
-    - 
+  - Cho phép bạn truyền dữ kiệu hay tham chiếu đến bất cứ nơi nào thuộc thành phần con của nó.
+    - CompA => CompB => CompC => CompD
+    - 1.Create content
+    - 2.Provider
+    - 3.Consumer
   - Example:
-    -
-
-
+    - https://codesandbox.io/s/winter-cherry-cu0v24 / https://codesandbox.io/s/quizzica-cautruc-files-125yo1
+# useImperativeHandle
+  - là một React Hook cho phép bạn tùy chỉnh tay cầm được hiển thị dưới dạng tham chiếu.
+  - Syntax :
+    - useImperativeHandle(ref, createHandle, dependencies?)
+  - Example:
+    - https://codesandbox.io/s/stupefied-scott-x7xzpl
+    - https://codesandbox.io/s/cocky-buck-kevy7t?file=/src/App.js
 # localstorge and sessionstorge
 # useEx
   - Text
